@@ -1,38 +1,265 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  padding: 40px 60px;
+  min-height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  background-color: black;
+}
+.navbar-langs {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid grey;
+  padding: 5px 60px;
+}
+
+.navbar-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  padding: 10px 60px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  padding: 10px 40px;
+}
+
+.navbar-third-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-third-right {
+  display: flex;
+  align-items: center;
+}
+
+.cart-text {
+  margin: 0;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #222222;
+}
+
+.footer-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding: 40px 60px;
+  border-bottom: 1px solid grey;
+}
+
+/* Footer left side (image) */
+.footer-left {
+  width: 100px; /* Width of the image */
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer right side (subscribe box) */
+.footer-right {
+  /* flex-grow: 1; */
+  margin-left: 20px;
+}
+
+.subscribe-box {
+  position: relative;
+  display: flex;
+}
+
+.subscribe-input {
+  width: calc(100% - 120px); /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  background-color: unset;
+  width: 500px;
+}
+
+.subscribe-button {
+  width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(85, 231, 72); /* Background color */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-second {
+  margin-top: 40px;
+  display: flex;
+  gap: 50px;
+  padding: 40px 60px;
+}
+
+.footer-second_text {
+  width: 400px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-list li {
+  margin-bottom: 10px;
+}
+
+.footer-third {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: black;
+}
+
+/* Centered login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Login box styles */
+.login-box {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-header {
+  margin-top: 0;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+  text-align: left;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+}
+
+/* Left section styles */
+.left-section {
+  width: 30%;
+  background-color: grey;
+  color: white;
+}
+
+.left-content {
+  padding: 20px;
+}
+
+/* Right section styles */
+.right-section {
+  width: 70%;
+  position: relative;
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.data-show {
+  background-color: white;
+  padding: 30px;
+  color: black;
+  box-shadow: 4px 1px 4px rgba(58, 78, 123, 0.4);
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
 }
